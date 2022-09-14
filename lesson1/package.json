@@ -1,0 +1,23 @@
+{
+  "name": "lesson1",
+  "version": "1.0.0",
+  "description": "Lesson 1 assignment",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo 'no test file'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelc7/cse341.git"
+  },
+  "author": "Samuel Cummings",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuelc7/cse341/issues"
+  },
+  "homepage": "https://github.com/samuelc7/cse341#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
