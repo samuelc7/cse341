@@ -18,8 +18,8 @@ const newContact = async (req, res) => {
                 res.send(dbResults["insertedId"]);
             }
     } else {
-        res.statusMessage = "firstName, lastName, email, birthDay, and favoriteColor fields are required.";
-        res.status(400).end();
+        res.status(400);
+        res.send("firstName, lastName, email, birthDay, and favoriteColor fields are required.");
     }
 
     
