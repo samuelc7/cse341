@@ -1,12 +1,21 @@
 const dotenv = require("dotenv"); // For enviornment vars
+const bodyParser = require("body-parser");
+const cors = require("cors");
+
 dotenv.config();
 
 const express = require("express");
 const app = express();
+// eslint-disable-next-line no-undef
 const port = process.env.PORT;
 
-const { connectDB, _ } = require("./DB/Connection");
-connectDB();
+const connection = require("./DB/Connection");
+const DB = new connection();
+DB.connectDB();
+
+app.use(cors());
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 app.use('/', require('./routes'));
 

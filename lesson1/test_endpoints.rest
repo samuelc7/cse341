@@ -10,6 +10,27 @@ GET http://localhost:3000/contacts/632922067e028b1dae022387
 ###
 GET http://localhost:3000/contacts/632922667e028b1dae022388
 
+###
+POST http://localhost:3000/contacts/new 
+content-type: application/json
+
+{
+    "firstName": "test",
+    "lastName": "test",
+    "email": "test",
+    "favoriteColor": "test",
+    "birthDay": "test"
+}
+
+###
+PUT http://localhost:3000/contacts/update
+content-type: application/json
+
+{
+    "id" : "",
+    "email" : "testing123"
+}
+
 
 // PRODUCTION TESTS
 ###
@@ -23,3 +44,5 @@ GET https://lesson1-fu20.onrender.com/contacts/632922067e028b1dae022387
 
 ###
 GET https://lesson1-fu20.onrender.com/contacts/632922667e028b1dae022388
+
+

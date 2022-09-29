@@ -1,8 +1,9 @@
-const {_, showAllContacts, _1} = require("../DB/Connection");
+const connection = require("../DB/Connection");
+const DB = new connection();
 
 const contacts = async (req, res) => {
     try {
-    const results = await showAllContacts();
+    const results = await DB.showAllContacts();
     res.send(results);
     } catch(e) {
         console.error(e);
