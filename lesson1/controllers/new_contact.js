@@ -14,6 +14,7 @@ const newContact = async (req, res) => {
             if (dbResults == 500) {
                 res.sendStatus(dbResults);
             } else {
+                res.status(201);
                 res.send(dbResults["insertedId"]);
             }
     } else {

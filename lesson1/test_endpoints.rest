@@ -8,7 +8,7 @@ GET http://localhost:3000/contacts/632920d47e028b1dae022386
 GET http://localhost:3000/contacts/632922067e028b1dae022387
 
 ###
-GET http://localhost:3000/contacts/632922667e028b1dae022388
+GET http://localhost:3000/contacts/63350c4e79b8883b206a18a3
 
 ###
 POST http://localhost:3000/contacts/new 
@@ -27,8 +27,16 @@ PUT http://localhost:3000/contacts/update
 content-type: application/json
 
 {
-    "id" : "",
+    "id" : "63350c4e79b8883b206a18a3",
     "email" : "testing123"
+}
+
+###
+DELETE http://localhost:3000/contacts/delete
+content-type: application/json
+
+{
+    "id" : "63350c4e79b8883b206a18a3"
 }
 
 
@@ -46,3 +54,31 @@ GET https://lesson1-fu20.onrender.com/contacts/632922067e028b1dae022387
 GET https://lesson1-fu20.onrender.com/contacts/632922667e028b1dae022388
 
 
+###
+POST https://lesson1-fu20.onrender.com/contacts/new 
+content-type: application/json
+
+{
+    "firstName": "test",
+    "lastName": "test",
+    "email": "test",
+    "favoriteColor": "test",
+    "birthDay": "test"
+}
+
+###
+PUT https://lesson1-fu20.onrender.com/contacts/update
+content-type: application/json
+
+{
+    "id" : "63350c4e79b8883b206a18a3",
+    "email" : "testing123"
+}
+
+###
+DELETE https://lesson1-fu20.onrender.com/contacts/delete
+content-type: application/json
+
+{
+    "id" : "63350c4e79b8883b206a18a3"
+}
