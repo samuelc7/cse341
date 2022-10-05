@@ -17,7 +17,7 @@ content-type: application/json
 {
     "firstName": "test",
     "lastName": "test",
-    "email": "test",
+    "": "test",
     "favoriteColor": "test",
     "birthDay": "test"
 }
@@ -27,7 +27,7 @@ PUT http://localhost:3000/contacts/update
 content-type: application/json
 
 {
-    "id" : "63350c4e79b8883b206a18a3",
+    "id" : "63351087f9df09daf3140dcf",
     "email" : "testing123"
 }
 
@@ -36,7 +36,7 @@ DELETE http://localhost:3000/contacts/delete
 content-type: application/json
 
 {
-    "id" : "63350c4e79b8883b206a18a3"
+    "id" : "63351087f9df09daf3140dcf"
 }
 
 
@@ -62,8 +62,7 @@ content-type: application/json
     "firstName": "test",
     "lastName": "test",
     "email": "test",
-    "favoriteColor": "test",
-    "birthDay": "test"
+    "favoriteColor": "test"
 }
 
 ###
@@ -71,8 +70,8 @@ PUT https://lesson1-fu20.onrender.com/contacts/update
 content-type: application/json
 
 {
-    "id" : "63350c4e79b8883b206a18a3",
-    "email" : "testing123"
+    "id" : "633902610c1f8cc51914d9a5",
+    "email" : "TEST123"
 }
 
 ###
@@ -80,5 +79,5 @@ DELETE https://lesson1-fu20.onrender.com/contacts/delete
 content-type: application/json
 
 {
-    "id" : "63350c4e79b8883b206a18a3"
+    "id" : "633902610c1f8cc51914d9a5"
 }
